@@ -16,29 +16,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn=findViewById(R.id.button);
-        e=findViewById(R.id.editText);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String s=e.getText().toString();
-                if(age<=5)
-                {
-                    Toast.makeText(MainActivity.this, "you are valid for polio drop", Toast.LENGTH_SHORT).show();
-                }
-                else if(age>=5 && age<=10)
-                {
-                    Toast.makeText(MainActivity.this, "you are valid for injection", Toast.LENGTH_SHORT).show();
-                }
-                else if(age>=10 && age<=15)
-                {
-                    Toast.makeText(MainActivity.this, "eligibel for vitamins", Toast.LENGTH_SHORT).show();
-                }
-                else if(age>=15 )
-                {
-                    Toast.makeText(MainActivity.this, "ghar jao", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+        
     }
 }
